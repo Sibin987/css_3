@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+#background, #foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#mountain{
+    transform: translateZ(-40px) scale(6);
+    height: 100%;
+    width: 100%;
+}
+
+#foreground{
+    transform: translateZ(-20px) scale(3);
+    
+}
